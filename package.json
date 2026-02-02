@@ -1,8 +1,11 @@
 {
   "name": "cds",
+  "version": "0.0.1",
+  "description": "",
+  "license": "WTFPL",
+  "author": "Sahana Celestine",
   "module": "src/main.ts",
   "type": "module",
-  "private": false,
   "scripts": {
     "lint": "biome lint src",
     "build": "bun b"
