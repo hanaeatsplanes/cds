@@ -1,13 +1,12 @@
 import help from "./help.ts";
+import resolve from "./resolve.ts";
 
 const args = process.argv.slice(2);
 
 const arg0 = args[0];
-if (!arg0 || arg0 === "help") {
-	console.log(`echo "${help}"`);
+if (arg0 === "help" || arg0 === "--help" || arg0 === "-h") {
+	console.log(`E"${help}"`);
 	process.exit(arg0 ? 1 : 0);
 }
 
-export const pwd = process.cwd();
-
-console.log(`echo "you are at ${pwd}, args: ${JSON.stringify(args)}`);
+console.log(`P${resolve(arg0 || "~")}`);
