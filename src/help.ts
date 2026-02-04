@@ -5,4 +5,4 @@ Usage:
   cds pin <pin> [directory]    - Pin [directory] (default: current working directory) to <pin>
   cds unpin <pin>              - Remove the pin association
   cds                          - Show this help
-`.trim()
+`.trim();
