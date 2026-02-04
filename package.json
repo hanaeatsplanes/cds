@@ -27,12 +27,13 @@
     "build": "bun build:compile && bun build:executable",
     "build:compile": "bun build . --production --outdir=dist",
     "build:executable": "bun build . --compile --outfile bin/cds-cli",
-    "lint": "biome check .",
-    "lint:fix": "biome check . --apply",
+    "lint": "bun check; bun format",
+    "lint:fix": "bun check:fix; bun format:fix",
     "format": "biome format .",
     "format:fix": "biome format . --write",
     "check": "biome check .",
-    "ci:biome": "biome check . --error-on-warnings",
+    "check:fix": "biome check . --write",
+    "ci:biome": "biome check . --error-on-warnings"
   },
   "type": "module"
 }
