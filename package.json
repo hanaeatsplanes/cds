@@ -1,5 +1,5 @@
 {
-  "name": "cds-cli",
+  "name": "@hanaeatsplanes/cds-cli",
   "version": "0.0.1",
   "description": "This is the helper tool for https://cds.sahana.dev",
   "license": "WTFPL",
