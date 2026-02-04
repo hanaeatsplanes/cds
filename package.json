@@ -15,7 +15,7 @@
     "typescript": "^5.9.3"
   },
   "bin": {
-    "cds-cli": "dist/cds-cli"
+    "cds-cli": "bin/cds-cli"
   },
   "bugs": {
     "url": "https://github.com/hanaeatsplanes/cds/issues"
