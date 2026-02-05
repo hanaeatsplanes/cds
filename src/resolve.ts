@@ -1,5 +1,5 @@
-import fs from "node:fs";
-import * as path from "node:path";
+import { realpathSync } from "node:fs";
+import { resolve } from "node:path";
 
 // TODO: add tag resolve
 export default function(input: string) {
@@ -8,10 +8,10 @@ export default function(input: string) {
 		input = input.replace(/^~/, process.env["HOME"] || "");
 	}
 
-	const abs = path.resolve(process.cwd(), input);
+	const abs = resolve(process.cwd(), input);
 
 	try {
-		return fs.realpathSync(abs);
+		return realpathSync(abs);
 	} catch {
 		return abs;
 	}

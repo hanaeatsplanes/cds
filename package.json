@@ -25,7 +25,7 @@
   "license": "WTFPL",
   "scripts": {
     "build": "bun build:compile && bun build:executable",
-    "build:compile": "bun build . --production --outdir=dist",
+    "build:compile": "bun build . --target=bun --outdir=dist",
     "build:executable": "bun build . --compile --outfile bin/cds-cli",
     "lint": "bun check; bun format",
     "lint:fix": "bun check:fix; bun format:fix",
