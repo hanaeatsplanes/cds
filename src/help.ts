@@ -4,5 +4,5 @@ Usage:
   cds list                     - List all pins and their associated directories
   cds pin <pin> [directory]    - Pin [directory] (default: current working directory) to <pin>
   cds unpin <pin>              - Remove the pin association
-  cds                          - Show this help
+  cds -h, --help, help                         - Show this help
 `.trim();

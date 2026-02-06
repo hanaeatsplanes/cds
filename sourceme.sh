@@ -13,7 +13,6 @@ cds() {
   fi
   dest="${res:1}"
   cd -- "$(eval echo "$dest")" || return 1
-
 }
 
 export -f cds

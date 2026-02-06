@@ -1,0 +1,3 @@
+[build]
+# Configure bun to use bin/cache for build artifacts and cache
+cacheDir = "bin/cache"

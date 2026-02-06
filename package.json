@@ -26,16 +26,14 @@
   "license": "WTFPL",
   "scripts": {
     "postinstall": "./postinstall.sh",
-    "build": "bun build:compile && bun build:executable",
-    "build:compile": "bun build . --production --target=bun --outdir=dist",
-    "build:executable": "bun build . --compile --outfile bin/cds-cli",
-    "lint": "bun check; bun format",
-    "lint:fix": "bun check:fix; bun format:fix",
-    "format": "biome format .",
-    "format:fix": "biome format . --write",
+    "build": "bun build . --compile --outfile bin/cds-cli",
     "check": "biome check .",
     "check:fix": "biome check . --write",
-    "ci:biome": "biome check . --error-on-warnings",
+    "format": "biome format .",
+    "format:fix": "biome format . --write",
+    "lint": "bun check; bun format",
+    "lint:fix": "bun check:fix; bun format:fix",
+    "ci": "biome check . --error-on-warnings"
   },
   "type": "module"
 }
